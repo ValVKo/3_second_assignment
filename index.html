@@ -7,6 +7,9 @@
         #startButton {
             padding:20px;
             font-size:80px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #container {
@@ -56,19 +59,17 @@
             background: #f1f7ff;
         }
 
-        .challengeDisplay {
-            width: 500px;
-        }
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container-fluid">
 
         <div class="row justify-content-md-center">
 
-            <div class="col-2">
-                <div class="card border-secondary mb-3" style="max-width: 18rem;margin:auto;margin-top: 30px;">
+            <div class="col">
+                <div class="card border-secondary mb-3" style="max-width: 18rem;min-width: 13rem;margin-left:auto;margin-top: 30px;">
                     <div class="card-header">Challenge</div>
                     <div class="card-body text-secondary">
                         <h5 class="card-title" id="challengeDisplay">Secondary card title</h5>
@@ -77,8 +78,8 @@
                 </div>
             </div>
 
-            <div class="col-2">
-                <div class="input-group input-group-lg" style="margin-top: 100px;width:200px;margin-left:auto;margin-right:auto">
+            <div class="col">
+                <div class="input-group input-group-lg" style="margin-top: 100px;width:200px;margin-right:auto">
                     <span class="input-group-text" id="inputGroup-sizing-m">Stop Mark</span>
                     <input type="text" class="form-control" aria-label="Timer" id="timerField" aria-describedby="inputGroup-sizing-lg" value="3" aria-placeholder="3" onchange="changeTimer(this)">
                 </div>
@@ -128,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" style="margin-bottom:30px">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Results Summary
